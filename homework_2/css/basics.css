@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
+/* Notice how to style a class (with the dot)... */
+.shout {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
