@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Temperature Converter</title>
+      <script src="scripts/convert_temp.js"></script>
+      <link rel="stylesheet" href="styles/main.css">
+   </head>
+   <body>
+      <h1>Temperature<br>Converter</h1>
+      <hr>
+      <div class="center">
+          <p>
+              <input id="F_in" type="number" min="-459.67">
+              <label for="F_in">°F:</label>
+          </p>
+          <p>
+              <input id="C_in" type="number" min="-273.15">
+              <label for="C_in">°C:</label>
+          </p>
+          <input id="convertButton" type="button" value="Convert Units">
+          <p id="message"></p>
+          <p>
+              <img id="weatherIcon" src="images/C-F.png" alt="C and F">
+          </p>
+      </div>
+
+   </body>
+
+</html>
