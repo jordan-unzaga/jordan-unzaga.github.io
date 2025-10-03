@@ -1,0 +1,145 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #222;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+}
+
+p.sub {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+form, .card {
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+.row {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select[multiple] {
+    height: 120px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem 1rem;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    background: #CC0041FF;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #CC0041FF;
+}
+
+select[multiple] option:checked {
+    background-color: #CC0041FF;
+    color: #fff;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #CC0041FF;
+}
+
+.card-table {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 1.5rem auto;
+}
+
+/* Table */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #eee;
+    padding: 0.8rem 1rem;
+    text-align: left;
+}
+
+th {
+    background: #f5f5f5;
+    font-weight: bold;
+}
+
+tr:nth-child(even) td {
+    background: #fafafa;
+}
+
+.empty {
+    color: #888;
+    font-style: italic;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
