@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Data Gathering Form</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main class="container">
+    <h1 class="header">Profile & Preferences</h1>
+    <p class="sub">Fill this out and submit!</p>
+
+    <section class="card">
+        <form action="view.php" method="POST">
+            <fieldset>
+                <legend>Class Year</legend>
+                <div class="radios">
+                    <label><input type="radio" name="class_year" value="Freshman" required> Freshman</label>
+                    <label><input type="radio" name="class_year" value="Sophomore"> Sophomore</label>
+                    <label><input type="radio" name="class_year" value="Junior"> Junior</label>
+                    <label><input type="radio" name="class_year" value="Senior"> Senior</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <div class="checks">
+                    <label><input type="checkbox" name="skills[]" value="HTML"> HTML</label>
+                    <label><input type="checkbox" name="skills[]" value="CSS"> CSS</label>
+                    <label><input type="checkbox" name="skills[]" value="JavaScript"> JavaScript</label>
+                    <label><input type="checkbox" name="skills[]" value="SQL"> SQL</label>
+                </div>
+            </fieldset>
+
+            <div class="row">
+                <label for="fav_lang">Favorite Language</label>
+                <select id="fav_lang" name="fav_lang" required>
+                    <option value="" disabled selected>Choose one…</option>
+                    <option>Python</option><option>Java</option><option>JavaScript</option><option>C#</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="tools">Dev Tools (multi-select)</label>
+                <select id="tools" name="tools[]" multiple size="5">
+                    <option>VS Code</option><option>IntelliJ</option><option>Vim</option>
+                    <option>Docker</option><option>Git</option>
+                </select>
+                <div class="note">Hold Ctrl/Cmd (or drag on mobile) to select multiple.</div>
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+</body>
+</html>
